@@ -1,0 +1,44 @@
+<!doctype html>
+      <html>
+                     <head>
+                     <title>webpage</title>
+                      <style>
+                      button{
+                                   cursor:pointer;
+                                   background-color:red;
+                                   color:Black;
+                                   font-weight:600;
+                                   font-size:20px;
+                                   border-radius:8px;
+                                   box-shadow:0 4px 10px lightgray;
+                          }
+          button:hover{
+                                 background-color:mediumred;
+                                transform= tranlateY(-2px);
+                                box-shadow=0 8px 10px silver;
+                                }
+                     p{
+                         background-color:red;
+                         color:black;
+                        font-weight:600;
+                        font-size:30px;
+                       }
+                    
+                    body{
+                            background-color:blue;
+                            }
+                
+                      </style>              
+                     </head>
+      <body>
+                  <center>
+                <p id="para">Welcome to javascript</p>
+                <button onclick="changeText()">Change Text</button>                                   
+                  </center>
+                  <script>
+                    function changeText(){
+                   document.getElementById("para").innerText="Hello friends";
+                    }
+                 </script>
+      </body>
+      </html>
